@@ -20,6 +20,10 @@ type ListNode struct {
 	Next *ListNode
 }
 
+//解题思路:
+//这道题还是比较简单的，直接遍历两个链表，借助一个额外的变量存放进位值
+//时间为O(max(m,n))，空间为O(max(m,n))+1
+//我这里实现的是一个变种，其实就是增加一个翻转的过程
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
 		if l2 != nil {
