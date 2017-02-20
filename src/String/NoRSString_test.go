@@ -23,7 +23,6 @@ func TestSameString(t *testing.T) {
 func TestRepeatingString(t *testing.T) {
 	var tS string
 	var l int
-	/*
 	tS = "abcabcbb"
 	l = lengthOfLongestSubstring(tS)
 	if l != 3 {
@@ -35,7 +34,6 @@ func TestRepeatingString(t *testing.T) {
 	if l != 3 {
 		t.Error("length is incorrect")
 	}
-*/
 	tS = "abcabcbbfdsa"
 	l = lengthOfLongestSubstring(tS)
 	if l != 5 {
@@ -44,9 +42,9 @@ func TestRepeatingString(t *testing.T) {
 }
 
 func TestLongString(t *testing.T) {
-	var tS string = "abcabcbbfdsagasgfgrekhtoewhfkkjgnkjghekrgkjnvgndbkjhgsahiutwhretghrekjsdkg"
+	var tS string = "fdagsagtrhytjtyjfjglregkjpeiorglknbjmlkjglfdjghlkghtuihjgyiyjkeprwokrgljmetl"
 	l := lengthOfLongestSubstring(tS)
-	if l != 9 {
+	if l != 12 {
 		t.Error("length is incorrect")
 	}
 }
