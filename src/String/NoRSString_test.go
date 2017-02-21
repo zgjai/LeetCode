@@ -42,9 +42,9 @@ func TestRepeatingString(t *testing.T) {
 }
 
 func TestLongString(t *testing.T) {
-	var tS string = "fdagsagtrhytjtyjfjglregkjpeiorglknbjmlkjglfdjghlkghtuihjgyiyjkeprwokrgljmetl"
+	var tS string = "fdgregoeogitouojfgghkrjerioguhiuyetuegnjkjnkjndckjvndfjbnkjndgklashdglkhjeiourtghjrkhgnkjasngkhndfkjghnbdkfjgiehrutyhuihrykfjdkjgkasdghfjyehiutrkgjhd"
 	l := lengthOfLongestSubstring(tS)
-	if l != 12 {
+	if l != 14 {
 		t.Error("length is incorrect")
 	}
 }

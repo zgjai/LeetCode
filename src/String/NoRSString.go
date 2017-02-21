@@ -20,11 +20,11 @@ import "fmt"
 //
 //another one:
 //依然借助于map来实现，同时需要两个下标的index1，index2
-//遍历list，index1先保持不动，index2向后移动，依次取出value，并判断value是否存在于map中，不存在则当作key put进去，否则
-//计算两个index的差，与当前保存的最长长度比较，保留大者，清空map，然后将index2赋值给index1，开始新一轮的遍历
+//遍历list，index1先保持不动，index2向后移动，依次取出单个字母char，并判断char是否存在于map中，不存在则char当作key，下标当作value put进去，否则
+//计算两个index的差，与当前保存的最长长度比较，保留大者，删除map中部分值，开始新一轮的遍历
 func lengthOfLongestSubstring(s string) int {
-	fmt.Println(s)
 	//最长长度，若最终该值依然为0，表示字符串中没有重复的字符
+	fmt.Println(s)
 	var maxLen int = 0
 	firInd, secInd := 0, 0
 	m := make(map[string]int)
@@ -35,15 +35,23 @@ func lengthOfLongestSubstring(s string) int {
 			m[char] = secInd
 			continue
 		}
-		fmt.Println(firInd, secInd)
-		m = make(map[string]int)
+		fmt.Println(m)
 		m[char] = secInd
 		tmpLen := secInd - firInd
-		firInd = i + 1
 		if tmpLen > maxLen {
 			maxLen = tmpLen
 		}
-		fmt.Println("maxLen: ", maxLen)
+		for ind := firInd; ind < secInd; ind++ {
+			fmt.Print(string(s[ind]))
+		}
+		// 删除重复字母前的元素
+		for ; firInd <= i; firInd++ {
+			c := string(s[firInd])
+			delete(m, c)
+		}
+		// 把当前重复的字母的第二个存起来，因为第一个在上面已经被删除了
+		m[char] = secInd
+		fmt.Println("  maxLen: ", maxLen)
 	}
 	tmpLen := secInd - firInd
 	if tmpLen > maxLen {
