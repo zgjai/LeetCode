@@ -40,10 +40,12 @@
       <root url="file://$PROJECT_DIR$/../GoSrc/src/unicode" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/cmd" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/math" />
+      <root url="file://$PROJECT_DIR$/../delve/src/github.com" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/errors" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/hash" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/regexp" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/syscall" />
+      <root url="file://$PROJECT_DIR$/../searchHub/src/main" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/bufio" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/internal" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/expvar" />
@@ -70,6 +72,7 @@
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2017/src/raft" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2017/src/shardkv" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2017/src/main" />
+      <root url="file://$PROJECT_DIR$/../GoPractice/src/test" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2016/src/kvpaxos" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2016/src/paxos" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2016/src/mapreduce" />
@@ -118,10 +121,12 @@
       <root url="file://$PROJECT_DIR$/../GoSrc/src/unicode" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/cmd" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/math" />
+      <root url="file://$PROJECT_DIR$/../delve/src/github.com" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/errors" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/hash" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/regexp" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/syscall" />
+      <root url="file://$PROJECT_DIR$/../searchHub/src/main" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/bufio" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/internal" />
       <root url="file://$PROJECT_DIR$/../GoSrc/src/expvar" />
@@ -148,6 +153,7 @@
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2017/src/raft" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2017/src/shardkv" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2017/src/main" />
+      <root url="file://$PROJECT_DIR$/../GoPractice/src/test" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2016/src/kvpaxos" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2016/src/paxos" />
       <root url="file://$PROJECT_DIR$/../MITDistributedSystem/2016/src/mapreduce" />
