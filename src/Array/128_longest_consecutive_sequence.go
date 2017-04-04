@@ -16,6 +16,8 @@ import "fmt"
 //借助map，遍历输入数组时，查找数值相邻元素，求出最大连续长度
 //但是这种方案的最坏时间复杂度是O(n*n)
 //
+//优化：
+//上述方案在进行每一个数的最长连续长度时，产生了大量重复计算，可以从这里入手优化
 
 func longestConsecutive(nums []int) int {
 	if len(nums) == 0 {
@@ -28,12 +30,12 @@ func longestConsecutive(nums []int) int {
 			maxLength = length
 			fmt.Println("maxLength", maxLength)
 		}
-		m[num] = 0
 	}
 	return maxLength
 }
 
-func queryMaxLengthByNum(m map[int]int, num int) int {
+//优化前
+/*func queryMaxLengthByNum(m map[int]int, num int) int {
 	return upperMaxLength(m, num, 1) + lowerMaxLength(m, num, 1) - 1
 }
 
@@ -53,4 +55,19 @@ func lowerMaxLength(m map[int]int, num int, length int) int {
 	length = lowerMaxLength(m, num-1, length+1)
 	fmt.Println("lowerMaxLength", length)
 	return length
+}*/
+
+//优化后
+func queryMaxLengthByNum(m map[int]int, num int) int {
+	// 重复元素
+	if l, ok := m[num]; ok {
+		return l
+	}
+	upLen := m[num+1]
+	lowLen := m[num-1]
+	l := upLen + lowLen + 1
+	m[num] = l
+	m[num+upLen] = l
+	m[num-lowLen] = l
+	return l
 }
